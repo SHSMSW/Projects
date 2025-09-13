@@ -1,0 +1,91 @@
+body{
+background-color: #c3c0c0;
+
+}
+.nav-main{
+    postion : fixed;
+    top:0;
+    width:100%;
+    height: 60px;
+    background-color: #FFFFFF;
+    display:flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+}
+.btn-menu{
+width: 60px;
+height: 100%;
+background-color: #8585ea;
+background-image: url(images/flower.png);
+background-repeat: no-repeat;
+background-size: 60%;
+background-position: center;
+border: none;
+cursor: pointer;
+}
+.nav-main ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:15px;
+}
+.nav-main ul li {
+list-style: none;
+line-height: 60px;
+
+  
+}
+.nav-main ul li a {
+display: block;
+height: 100%;
+padding : 0  15px;
+color:#111111;
+text-decoration: none;
+text-transform: uppercase;
+font-family: arial;
+}
+.btn-menu:hover{
+    background-color: #5959e9;
+
+}
+.nav-main ul li a:hover {
+    background-color: #5959e9;
+}
+.side-menu{
+    position: fixed;
+    left: 0px;
+    bottom:0px;
+    width:50px;
+    padding: 0 5px;
+    height:calc(100vh - 60px);
+    background-color: rgb(101, 101, 238);
+    z-index: 1000;
+    transition: All 0.3s ease-in-out;
+}
+.side-menu ul{
+padding-top: 20px; 
+overflow: hidden;
+visibility: hidden;
+
+
+}
+.side-menu ul li{
+    line-height: 60px;
+    list-style: none;
+}
+.side-menu ul li a, .side-menu ul li span{
+    display: block;
+    height: 60px;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#FFFFFF;
+    white-space: nowrap; /*make sure that the text doesn't wrap to the next line if there is no space for it*/ 
+    opacity: 0;
+       transition: All 0.3s ease-in-out;
+}
+
+.side-menu ul li a:hover{
+    background-color: #5959e9;
+
+
+}
