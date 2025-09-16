@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">   
+    <head>
+<meata charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchanted Arena</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+    <script src="jss/enemy.js" ></script>
+    <script src="jss/player.js" ></script>        
+    <script src="jss/gameManger.js" ></script>
+
+</head> 
+<body> 
+<div class="header"> 
+    <h1>Enchanted Arena</h1>
+    <h2> choose your character!</h2>
+</div>
+<div class="player-html"> 
+    <a href="#" onclick="GameManager.setGameStart('Warrior')">
+     <div>
+        <img src="css/images/Warrior.png" alt="warrior">
+        <h3> Warrior</h3>
+        <p> Strong and brave fighter with high defense and attack power.</p>
+     </div>
+    </a>
+      <a href="#"  onclick="GameManager.setGameStart('Mage')">
+     <div>
+        <img src="css/images/Mage.png" alt="Mage">
+        <h3> Mage</h3>
+        <p> Strong and brave fighter with high defense and attack power.</p>
+     </div>
+    </a>
+      <a href="#"  onclick="GameManager.setGameStart('Wolfy')">
+     <div>
+        <img src="css/images/Wolfy.png" alt="Wolfy">
+        <h3> Wolfy</h3>
+        <p> Strong and brave fighter with high defense and attack power.</p>
+     </div>
+    </a>
+      <a href="#"  onclick="GameManager.setGameStart('Fairy')">
+     <div>
+        <img src="css/images/Fairy.png" alt="Fairy">
+        <h3>Fairy</h3>
+        <p> Strong and brave fighter with high defense and attack power.</p>
+     </div>
+    </a>
+</div>
+<div class="actions"> </div>
+<div class="arena"> </div>
+<div class="enemy"> </div>
+
+
+
+</body>
+
+
+
+</html>
